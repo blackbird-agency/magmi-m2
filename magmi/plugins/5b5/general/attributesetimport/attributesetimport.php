@@ -811,13 +811,11 @@ class AttributeSetImporter extends Magmi_GeneralImportPlugin
 
                     $to_delete=!$givenNameValues->offsetExists($currentNames);
 
-                    if($pruneonly!="" && $to_delete && !is_int($currentNames[0]))
-                    {
+                    if($pruneonly!="" && $to_delete && !is_int($currentNames[0])) {
                         $to_delete = $to_delete && preg_match("/$pruneonly/",$currentNames[0]);
                     }
 
-                    if($to_delete)
-                    {
+                    if($to_delete) {
                         $to_delete = $to_delete && !$keepNamesArray->offsetExistsPartly($currentNames) && !isset($keepSystemIds[$currentId]);
                     }
 

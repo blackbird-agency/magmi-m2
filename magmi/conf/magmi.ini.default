@@ -1,18 +1,18 @@
 
 [DATABASE]
 ;magento database name
-dbname=magento
+dbname=
 ;magento database host
-host=localhost
+host=localhost:8889
 ;database user
-user=<<YOUR USERNAME>>
+user=root
 ;database password
-password=<<YOUR PASSWORD>>
+password=root
 ;---- Uncomment following line if you have a table prefix
 ;table_prefix=<<SET YOUR MAGENTO TABLE PREFIX HERE>> 
 [MAGENTO]
 ;magento base directory on host : ie : /media/Data/magento
-basedir="../.."
+basedir="../"
 ;change this if you are using localized "Enabled" status in non english languages
 ;enabled_status_label="Enabled"
 [GLOBAL]
